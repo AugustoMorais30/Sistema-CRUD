@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Poo</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  
+</head>
+<body>
+    <h1>Cadastramento de Produtos</h1>
+    <form id="augusto_produtos">
+        <label for="nome">Nome: </label>
+        <input type="text" name="Produto" id="nome" required>
+
+        <label for="nome">Preço: </label>
+        <input type="number" name="Preço do Produto" id="preco" required>
+
+        <label for="prime">É Prime? </label>
+        <input type="checkbox" value="prime" id="prime">
+        <input type="hidden" name="idx" id="idx" value="novo">
+        <input type="submit" value="Salvar" id="envi">
+    </form>
+
+    <table>
+        <h3>Listagem de Produtos</h3>
+        <thead>
+            <tr>
+                <th>Identificador</th>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Prime</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbody"></tbody>
+    </table>
+    <div id="div">
+         <button id="sai">Sair</button>
+    </div>
+   
+    <script src="JS/crud.js"></script>
+</body>
+</html>
